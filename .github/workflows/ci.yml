@@ -35,7 +35,7 @@ jobs:
       # ── Backend ──────────────────────────────
       - name: Install backend dependencies
         working-directory: backend   # เปลี่ยน directory ก่อนรัน
-        run: npm ci                  # ci = clean install (เร็วกว่า npm install)
+        run: npm ci --legacy-peer-deps               # ci = clean install (เร็วกว่า npm install)
 
       - name: Lint backend code
         working-directory: backend
